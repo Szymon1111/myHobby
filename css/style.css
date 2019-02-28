@@ -75,8 +75,9 @@ transition: .5s;
 }
 .menu-opener-element{
     width:65%;
-    height: 1px;
+    height: 3px;
     background-color: #fff;
+    border-radius: 50px;
 
     position: absolute;
     left:50%;
@@ -132,13 +133,13 @@ transition: .5s;
     justify-content: center;
     align-items: center;
 
-	transition: background-color .7s;
+	transition: background-color 1s;
 }
 .main-menu.opened{
 	background-color: rgba(10,10,10,.5);	
 }
 .main-menu.opened .elements{
-opacity: 1;
+    opacity: 1;
 }
 .elements{
 display: flex;
@@ -147,7 +148,7 @@ display: flex;
     align-items: center;
 	opacity:0;
 
-	transition: opacity.7s;
+	transition: opacity.1s;
 }
 .menu-element{
     font-size:40px;
