@@ -10,7 +10,7 @@ body{
     background-color: #597C2B;
     background-color: #668D2E;
     background-color: #80A142;
-    background-color: #91B247;
+    background-color: #90b247;
     background-color: #D2E459;
 
     background-color: #668D2E;
@@ -54,19 +54,72 @@ h3{
 	width:40px;
 	height: 40px;
 
-	border:1px solid white;
-	border-radius: 50px;
+	border:1px solid transparent;
+    border-radius: 50px;
+    
+    background-color:rgba(144, 178, 71,.2);
 
 	position:fixed;
 	top:5%;
 	left:50%;
-	transform:translateX(-50%);
+    transform:translateX(-50%);
 
 transition: .5s;
 }
 .menu-opener:hover{
 	cursor:pointer;
-	border-color: #91B247;
+	border-color: #80A142;
+}
+.menu-opener:hover > .menu-opener-element{
+
+}
+.menu-opener-element{
+    width:65%;
+    height: 1px;
+    background-color: #fff;
+
+    position: absolute;
+    left:50%;
+    
+    transform: translate(-50%,-50%);
+
+    transition: .5s;
+}
+.menu-opener-element.up{
+    animation-name: up-opener-animation-back;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+}
+.menu-opener-element.middle{
+    animation-name: middle-opener-animation-back;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+}
+.menu-opener-element.bottom{
+    animation-name: bottom-opener-animation-back;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+}
+.main-menu.opened .menu-opener-element.up{
+    animation-name: up-opener-animation;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+}
+.main-menu.opened .menu-opener-element.middle{
+    animation-name: middle-opener-animation;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+}
+.main-menu.opened .menu-opener-element.bottom{
+    animation-name: bottom-opener-animation;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
 }
 .main-menu{
     width:100%;
@@ -108,4 +161,93 @@ cursor:default;
 .main-menu.opened .menu-element:hover{
     color: #91B247;
     cursor: pointer;
+}
+/* ----------------------------------------------------------- */
+/* animation */
+@keyframes up-opener-animation{
+    0%{
+        -webkit-transform: translate(-50%,-50%) rotate(0);
+        top:30%;
+    }
+    50%{
+        -webkit-transform: translate(-50%,-50%) rotate(0);
+        top:50%; 
+    }
+    100%{
+        top:50%;
+        -webkit-transform: translate(-50%,-50%) rotate(405deg);
+    }
+}
+@keyframes middle-opener-animation{
+    0%{
+        opacity: 1;
+        -webkit-transform: translate(-50%,-50%) rotate(0);
+        top:50%;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes bottom-opener-animation{
+    0%{
+        -webkit-transform: translate(-50%,50%) rotate(0);
+        bottom:30%;
+    }
+    50%{
+        -webkit-transform: translate(-50%,50%) rotate(0);
+        bottom:50%; 
+    }
+    100%{
+        bottom:50%;
+        -webkit-transform: translate(-50%,50%) rotate(495deg);
+    }
+}
+/* back animation */
+@keyframes up-opener-animation-back{
+    0%{
+        top:50%;
+        -webkit-transform: translate(-50%,-50%) rotate(405deg);
+        
+    }
+    50%{
+        -webkit-transform: translate(-50%,-50%) rotate(0);
+        top:50%; 
+    }
+    100%{
+        -webkit-transform: translate(-50%,-50%) rotate(0);
+        top:30%;
+    }
+}
+@keyframes middle-opener-animation-back{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        -webkit-transform: translate(-50%,-50%) rotate(0);
+        top:50%; 
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translate(-50%,-50%) rotate(0);
+        top:50%;
+    }
+}
+@keyframes bottom-opener-animation-back{
+    0%{
+        bottom:50%;
+        -webkit-transform: translate(-50%,50%) rotate(495deg);
+        
+    }
+    50%{
+        -webkit-transform: translate(-50%,50%) rotate(0);
+        bottom:50%; 
+    }
+    100%{
+        -webkit-transform: translate(-50%,50%) rotate(0);
+        bottom:30%;
+    }
 }
