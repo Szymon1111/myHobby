@@ -9,8 +9,11 @@ for(let i = 0;i<images.length;i++){
 for(let i = 0;i<sections.length;i++){
     changeBackgroundImage(sections[i],images[i],'background'+i);
 }
-
-
+window.onload = function() {
+//    $.scrollTo('.history', 10);
+//    $.scrollTo('.title-page', 10);
+    document.querySelector('.loading-page').style.display = 'none';
+};
 
 document.querySelector('.menu-opener').addEventListener('click', function () {
     document.querySelector('.main-menu').classList.toggle("opened");
@@ -28,6 +31,7 @@ document.querySelector('.elements').addEventListener('click', function () {
 menuOpenerPosition();
 
 window.addEventListener('scroll', function () {
+    
     menuOpenerPosition();
     
     for(let i = 0;i<sections.length;i++){
@@ -73,8 +77,6 @@ $("#about").click(function() {
 $("#history").click(function() {
   scrollToSection('.history',750);
 });
-window.onload = function() {
-    $.scrollTo('.history', 10);
-    $.scrollTo('.title-page', 10);
-    document.querySelector('.loading-page').style.display = 'none';
-};
+$("#division").click(function() {
+  scrollToSection('.division',750);
+});
