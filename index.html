@@ -1,6 +1,7 @@
-﻿ <!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,30 +9,90 @@
 
     <link rel="icon" href="img/bike.ico">
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="page-header">
-      <h1>Kolarstwo</h1>
-    </header>
 
-     <nav class="main-menu">
-      <div class="menu-opener">
-        <div class="menu-opener-element up"></div>
-        <div class="menu-opener-element middle"></div>
-        <div class="menu-opener-element bottom"></div>
+    <link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+</head>
 
-      </div>
+<body>
+    <div class="section title-page">
+        <header class="page-header">
+            <div class="main-header">Kolarstwo</div>
+        </header>
+    </div>
+    <nav class="main-menu">
+        <div class="menu-opener">
+            <div class="menu-opener-element up"></div>
+            <div class="menu-opener-element middle"></div>
+            <div class="menu-opener-element bottom"></div>
 
-      <div class="elements">
-        <div class="menu-element">O mnie</div>
-        <div class="menu-element">Historia</div>
-        <div class="menu-element">Podzial</div>
-        <div class="menu-element">Rowery</div>
-        <div class="menu-element"></div>
-      </div>
+        </div>
+
+        <div class="elements">
+            <div class="menu-element-home"></div>
+            <div class="menu-element" id="about">O mnie</div>
+            <div class="menu-element" id="history">Historia</div>
+            <div class="menu-element" id="division">Podzial</div>
+            <div class="menu-element" id="bike">Rowery</div>
+        </div>
     </nav>
 
-	<script src="js/main.js"></script>
+    <div class="loading-page">LOADING</div>
 
-  </body>
+    <div class="background">
+
+        <div class="background-img"></div>
+        <div class="background-img"></div>
+        <div class="background-img"></div>
+        <div class="background-img"></div>
+
+    </div>
+
+    <div class="section about">
+
+        <h1>O mnie</h1>
+
+        <div class="description">
+
+            Cześć ! Mam na imię Szymon moim hobby jest kolarstwo. Głównie górskie jednak czasem lubię przejechać się na "szosie" po ulicach miasta. Na rowerze jeżdzę w zasadzie odkąd pamiętam.
+
+        </div>
+
+        <img src="img/me.jpg" alt="My photo" class="my-photo">
+
+
+    </div>
+
+    <div class="section history">
+
+        <h1>Historia</h1>
+
+    </div>
+
+    <div class="section division">
+
+        <h1>Podzial</h1>
+
+
+        <div class="type-box">
+
+            <div class="type-photo"></div>
+            <div class="type-background"></div>
+            <div class="type-content">
+
+                Kolarstwo szosowe...
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+</body>
+
 </html>
