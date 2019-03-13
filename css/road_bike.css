@@ -5,6 +5,7 @@
 .htbike-img{
     background-image: url(../img/road-bike.png);
     height: 350px;
+    top:40%;
 }
 .htbike-img:hover{
     background-image: url(../img/road-bike-hover.png);
