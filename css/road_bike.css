@@ -1,0 +1,11 @@
+.page-header-background{
+    background-image: url(../img/road-bike-headerbgi.jpg);
+    background-position: center 30%;
+}
+.htbike-img{
+    background-image: url(../img/road-bike.png);
+    height: 350px;
+}
+.htbike-img:hover{
+    background-image: url(../img/road-bike-hover.png);
+}

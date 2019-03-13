@@ -69,7 +69,8 @@ body{
 }
 .htbike-img{
     background-image: url(../img/htbike.png);
-    left:1%;
+    left:50%;
+    transform: translateX(-120%); 
 }
 .htbike-img:hover{
     background-image: url(../img/htbike-hover.png);
@@ -80,9 +81,10 @@ body{
 }
 .fullbike-img{
     background-image: url(../img/fullbike.png);
-    right: 1%;
+    right: 50%;
     height: 300px;
     top:45%;
+    transform: translateX(120%); 
 }
 .fullbike-img:hover{
     background-image: url(../img/fullbike-hover.png);

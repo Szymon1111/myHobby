@@ -78,17 +78,9 @@ document.querySelector('#road').addEventListener('click', function () {
     document.querySelector('#road-box').classList.toggle("opened");
 
     document.querySelector('#mountain-box').classList.remove("opened");
-    document.querySelector('#other-box').classList.remove("opened");
 });
 document.querySelector('#mountain').addEventListener('click', function () {
     document.querySelector('#mountain-box').classList.toggle("opened");
 
     document.querySelector('#road-box').classList.remove("opened");
-    document.querySelector('#other-box').classList.remove("opened");
-});
-document.querySelector('#other').addEventListener('click', function () {
-    document.querySelector('#other-box').classList.toggle("opened");
-
-    document.querySelector('#road-box').classList.remove("opened");
-    document.querySelector('#mountain-box').classList.remove("opened");
 });

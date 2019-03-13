@@ -258,6 +258,7 @@ body {
     justify-content: center;
 
     height: 100vh;
+    padding-top: 20px;
 }
 .type-box{
     position: relative;
@@ -267,14 +268,20 @@ body {
 
     margin:50px;
 }
+#road{
+    background-image: url(../img/roadbikebgi.jpg);
+}
+#mountain{
+    background-image: url(../img/dhbikebgi.jpg);
+    background-position: center;
+}
 .type-photo{
     position: absolute;
     left:50%;
-    top:8%;
+    top:30%;
     
     transform: translateX(-50%);
     
-    background-image: url(../img/roadbikebgi.jpg);
     background-size: cover;
     
     width:280px;
@@ -299,10 +306,12 @@ body {
 .type-content{
     opacity: 0;
     font-family: 'Lobster', cursive;
+    font-size: 25px;
 }
 .type-box.opened .type-photo{
     height: calc(280px * 0.75);
     border-radius: 0;
+    top:8%;
 }
 .type-box.opened .type-background{
     position: absolute;
@@ -324,6 +333,9 @@ body {
     
     width:370px;
     height: 400px;
+
+    padding: 20px 50px;
+    box-sizing: border-box;
     
     opacity: 1;
 
