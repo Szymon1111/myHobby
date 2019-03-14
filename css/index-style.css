@@ -370,7 +370,13 @@ body {
     transition: .5s;
     transition-delay: .5s;
 }
-
+.page-footer h3{
+    color:white;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
 /* ----------------------------------------------------------- */
 /* animation */
 @keyframes up-opener-animation {
