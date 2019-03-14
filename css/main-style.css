@@ -47,4 +47,8 @@ h3 {
     font-family: title-font;
     color:white;
     font-size: 150px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

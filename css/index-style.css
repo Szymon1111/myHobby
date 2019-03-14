@@ -242,7 +242,25 @@ body {
     
     display: flex;
     align-items: center;
+    
+    z-index: 450;
 
+}
+.video{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-600px);
+    
+    width: 700px;
+    height: 500px;
+    
+    z-index: 500;
+    
+    opacity: 0;
+}
+.video.opened{
+    opacity: 1;
 }
 .my-photo{
     width:700px;
@@ -250,8 +268,15 @@ body {
     top: 27%;
     left: 50%;
     transform: translateX(-600px);
+    
+    z-index: 480;
+}
+.video:hover{
+    cursor: pointer;
 }
 .types{
+    position:relative;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -259,6 +284,8 @@ body {
 
     height: 100vh;
     padding-top: 20px;
+    
+    z-index:200;
 }
 .type-box{
     position: relative;
@@ -307,6 +334,7 @@ body {
     opacity: 0;
     font-family: 'Lobster', cursive;
     font-size: 25px;
+    color:black;
 }
 .type-box.opened .type-photo{
     height: calc(280px * 0.75);

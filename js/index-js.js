@@ -84,3 +84,9 @@ document.querySelector('#mountain').addEventListener('click', function () {
 
     document.querySelector('#road-box').classList.remove("opened");
 });
+document.querySelector('.video').addEventListener('click', function () {
+    document.querySelector('.video').classList.toggle("opened");
+}, false);
+document.querySelector('.description').addEventListener('click', function () {
+    document.querySelector('.video').classList.toggle("opened");
+}, false);
