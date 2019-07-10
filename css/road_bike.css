@@ -10,3 +10,19 @@
 .htbike-img:hover{
     background-image: url(../img/road-bike-hover.png);
 }
+.fullbike-img{
+    background-image: url(../img/gravel.png);
+    height:320px;
+}
+.fullbike-img:hover{
+    background-image: url(../img/gravel-hover.png);
+}
+.road{
+    background-image: url(../img/road-bike.png);
+}
+.gravel{
+    background-image: url(../img/gravel.png);
+}
+.description{
+    top:20vh;
+}

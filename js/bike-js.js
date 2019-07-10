@@ -45,20 +45,3 @@ $(".fat-bike-img").click(function() {
 $(".up-arrow").click(function() {
   $.scrollTo(0, 1000);
 });
-
-let imgTableHt = ['hornet.jpg','xc-bike.jpg','commencal.jpg'];
-let imgTableFull = ['fuzz.jpg','snabb.jpg','moon.png'];
-let imgTableFat = ['fatbike1.jpg','fatbike2.jpg','fatbike3.jpg'];
-let i = 0;
-
-window.setInterval(function(){
-  i++;
-  if(i>2){
-    i=0;
-  }
-
-  document.querySelector('.section-img').style.backgroundImage = 'url(img/'+imgTableHt[i]+')';
-  document.querySelector('.section-img-full').style.backgroundImage = 'url(img/'+imgTableFull[i]+')';
-  document.querySelector('.section-img-fat').style.backgroundImage = 'url(img/'+imgTableFat[i]+')';
-
-},6000);
