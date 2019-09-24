@@ -1,91 +1,62 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moje Hobby - Kolarstwo Górskie</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Moje Hobby - Kolarstwo Górskie</title>
+    <link rel="icon" href="img/bike.ico" />
+    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="css/bike-style.css" />
+    <link rel="stylesheet" href="css/road_bike.css" />
 
-  <link rel="icon" href="img/bike.ico" />
-  <link rel="stylesheet" href="css/main-style.css" />
-  <link rel="stylesheet" href="css/bike-style.css" />
-  <link rel="stylesheet" href="css/road_bike.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet" />
-</head>
+  <body>
+    <div class="loading-page">LOADING...</div>
 
-<body>
-  <div class="loading-page">LOADING...</div>
+    <div class="up-arrow">
+      <div class="arrow"></div>
+      <div class="bike"></div>
+    </div>
 
-  <div class="up-arrow">
-    <div class="arrow"></div>
-    <div class="bike"></div>
-  </div>
-
-  <header class="page-header">
-    <h1>Rower Szosowy</h1>
-    <div class="page-header-background"></div>
-    <div class="bikes">
-      <div class="htbike-img">
-        <div class="img-title">
-          Road bike
+    <header class="page-header">
+      <h1>Rower Szosowy</h1>
+      <div class="page-header-background"></div>
+      <div class="bikes">
+        <div class="htbike-img">
+          <div class="img-title">
+            Road bike
+          </div>
+        </div>
+        <div class="fullbike-img">
+          <div class="img-title2">
+            Gravel
+          </div>
         </div>
       </div>
-      <div class="fullbike-img">
-        <div class="img-title2">
-          Gravel
-        </div>
-      </div>
+    </header>
+
+    <div class="section htbike">
+      <h2>Road bike</h2>
     </div>
-  </header>
 
-  <div class="section htbike">
-    <h2>Road bike</h2>
-
-    <div class="section-img road"></div>
-
-    <div class="description">
-
-      <p>Sportowy rower, dostosowywany przede wszystkim do jazdy na twardej drodze</p>
-
-      <p>Zgodnie z zasadami UCI do zawodów szosowych są dopuszczane tylko pionowe rowery o obu kołach tej samej średnicy
-      (najczęściej 650 lub 700c) z klasycznym układem napędowym, oraz klasyczną ramą.</p>
-
-      <p> Klasyczny układ napędowy składać się musi z zespołu zębatek przednich napędzanych bezpośrednio za pomocą nóg przy
-      pomocy korb i pedałów. Zębatki przednie są połączone łańcuchem z zespołem zębatek napędzających bezpośrednio tylne
-      koło. Ograniczenia dotyczące rozmiarów zębatek dotyczą młodszych kategorii wiekowych.></p>
-
-      <p>UCI dość długo utrzymywała zasadę, że rower szosowy może mieć maksymalnie 10 przełożeń (dwie zębatki z przodu i 5
-      z tyłu), później[kiedy?] jednak odstąpiono od tego i współczesne rowery szosowe posiadają zwykle dwie zębatki z
-      przodu i 9, 10, a nawet 11 zębatek z tyłu, co daje razem od 18 do 22 (niekiedy powtarzających się) przełożeń.</p>
-
-      <p>Klasyczna rama składać się musi z głównego trójkąta o określonych przez UCI rozmiarach maksymalnych i minimalnych,
-      trójkąta tylnego oraz przednich widełek, których rozmiary i budowa są także ściśle zdefiniowane przez organizację.</p>
-
+    <div class="section fullbike">
+      <h2>Gravel</h2>
     </div>
-  </div>
 
-  <div class="section fullbike">
-    <h2>Gravel</h2>
-
-    <div class="section-img gravel"></div>
-
-    <div class="description">
-
-      <p>Grawel, gravel, adventure, szutrówka, żwirówka, szosowo-wyprawowy</p>
-      <p>Możemy się spotkać z różnymi określeniami tego typu rowerów. Tak jak w przypadku fitnessów, nie ma jednej, idealnie opisującej te rowery definicji.</p>
-      <p> Z założenia, rower typu grawel to taka wygodna przełajówka. Z bardziej wyprostowaną pozycją za kierownicą, większym rozstawem kół, często z możliwością założenia dużo szerszych opon oraz bagażnika.</p>
-
-    </div>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/loading.js"></script>
-  <script src="js/bike-js.js"></script>
-  <script src="js/road.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/bike-js.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+  </body>
 </html>

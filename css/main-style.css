@@ -16,9 +16,6 @@
     font-family: tag2;
     src: url(../fonts/VintageParty-FreeVersion.ttf);
 }
-body{
-    overflow: hidden;
-}
 h1,
 h2,
 h3 {
@@ -54,4 +51,14 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@keyframes jump{
+    0%{transform: rotate(-90deg) translateX(0);}
+    50%{transform: rotate(-90deg) translateX(20px);}
+    100%{transform: rotate(-90deg) translateX(0);}
+}
+@keyframes jumpDown{
+    0%{transform: rotate(90deg) translateX(0);}
+    50%{transform: rotate(90deg) translateX(20px);}
+    100%{transform: rotate(90deg) translateX(0);}
 }

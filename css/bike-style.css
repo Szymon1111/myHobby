@@ -150,21 +150,20 @@ p{
 
     margin:15px;
 }
-.section-img{
+.section-img,
+.section-img-fat{
     position: absolute;
     top:20%;
     left:6%;
 
     width:930px;
     height:550px;
+    background-image: url(../img/hornet.jpg);
     background-size: cover;
 
     transition: 1s;
 }
-.ht{
-    background-image: url(../img/hornet.jpg);
-}
-.full{
+.section-img-full{
     position: absolute;
     top:20%;
     right: 6%;
@@ -176,7 +175,7 @@ p{
 
     transition: 1s;
 }
-.fat{
+.section-img-fat{
     background-image: url(../img/fatbike1.jpg);
 }
 .up-arrow{
@@ -219,10 +218,4 @@ p{
     height: 50px;
 
     transition: .5s;
-}
-
-@keyframes jump{
-    0%{transform: rotate(-90deg) translateX(0);}
-    50%{transform: rotate(-90deg) translateX(20px);}
-    100%{transform: rotate(-90deg) translateX(0);}
 }
